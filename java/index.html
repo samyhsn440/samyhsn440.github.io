@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List JSON</title>
+    <script>
+        // Définition des données JSON dans des variables JavaScript
+        
+        let listeTaches = [
+            {"idTache":"1","libelle":"Faire les courses","description":"Acheter des légumes, du pain et des produits laitiers.","date_creation":"2025-04-07","date_echeance":"2025-04-10","idPriorite":"2","idCategorie":"1","idStatut":"1","idUrgence":"3"},
+            {"idTache":"2","libelle":"Réparer la voiture","description":"Changer les plaquettes de frein avant.","date_creation":"2025-04-06","date_echeance":"2025-04-09","idPriorite":"1","idCategorie":"2","idStatut":"2","idUrgence":"1"},
+            {"idTache":"3","libelle":"Étudier pour l'examen","description":"Réviser les chapitres 3 et 4 de la leçon de maths.","date_creation":"2025-04-05","date_echeance":"2025-04-12","idPriorite":"3","idCategorie":"5","idStatut":"1","idUrgence":"2"}
+        ];
+
+        let listePriorites = [
+            {"idPriorite":"1","priorite":"Très importante"},
+            {"idPriorite":"2","priorite":"Importante"},
+            {"idPriorite":"3","priorite":"Moyenne"},
+            {"idPriorite":"4","priorite":"Peu importante"},
+            {"idPriorite":"5","priorite":"Non importante"}
+        ];
+
+        let listeCategories = [
+            {"idCategorie":"1","categorie":"Travail"},
+            {"idCategorie":"2","categorie":"Personnel"},
+            {"idCategorie":"3","categorie":"Loisirs"},
+            {"idCategorie":"4","categorie":"Ménage"},
+            {"idCategorie":"5","categorie":"Études"}
+        ];
+
+        let listeStatuts = [
+            {"idStatut":"1","statut":"À faire"},
+            {"idStatut":"2","statut":"En cours"},
+            {"idStatut":"3","statut":"Terminée"},
+            {"idStatut":"4","statut":"Annulée"}
+        ];
+
+        let listeUrgences = [
+            {"idUrgence":"1","urgence":"Urgente"},
+            {"idUrgence":"2","urgence":"Haute"},
+            {"idUrgence":"3","urgence":"Modérée"},
+            {"idUrgence":"4","urgence":"Basse"}
+        ];
+
+        // Affichage des données dans la console
+        console.log(listeTaches);
+        console.log(listePriorites);
+        console.log(listeCategories);
+        console.log(listeStatuts);
+        console.log(listeUrgences);
+    </script>
+</head>
+<body>
+    <h1>To-Do List avec JSON</h1>
+    <p>Ouvrez la console pour voir les données JSON affichées.</p>
+</body>
+</html>
